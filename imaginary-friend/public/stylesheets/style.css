@@ -1,0 +1,41 @@
+h1 {
+  font-family: 'BigBottomCartoonRegular';
+  font-weight: lighter;
+  font-style: normal;
+  font-size: 34px;
+  text-align: center;
+}
+.title {
+  font-family: 'BigBottomCartoonRegular';
+  margin: 35px 0 20px;
+}
+.body-text {
+  font-family: 'OrkneyRegular';
+  font-size: 25px;
+  margin: 0 200px 0;
+}
+h2 {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+  /* text-align: center; */
+}
+
+.navbar-brand {
+  font-family: 'BigBottomCartoonRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 55px;
+}
+
+/* Toy */
+#toy {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  transition: 60s ease;
+}
+
+#toy:hover {
+  width: 150%;
+}

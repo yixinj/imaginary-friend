@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "teddy-bear-215804",
+  "private_key_id": "2dbfed1eb10b056b2661206a57b6404bd78703da",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCq1al9zDYMmGeR\n1dAzcG3+1fB+Y65f/xxqPqDZEnhi4AWD3HPieuQECi8RloYm/bbFe6rMx1zagLMZ\nfFp1lSpZr0GuXfLaSRyGbjW5pxArFA7CDTg4lazEqqPZIHBeYh0brHBzyuclrTZ3\nV0f+FwRlex+hhZp/HUzVjl6oVRmaXydhBJ/G3uVQ8k4VVfE/4YkOxIdklG1O8lzG\nq5SMIgbPiSu60k+DpbGxOVH3kngmhSpGwSyN7Cq6OdbrFR3KMySzmiQu9Kihmbh7\nFgmzZ/HJvrsFxQi7Ndszzh6Q810WA+l0WBnKkuFIJPBhTZ2qNc6Y/VbaIESVH/Nh\n3Ezv0Y+nAgMBAAECggEAGJrDWZHy6ud8az2vSelUflKT27BBqiPVFNxGUF1fp2X6\nhV5X9nOaqZZJ5y+VzMHX9CN2mx3PmszUfsQxRyQfwGEEhbeURaooCJiQ9ldAdePi\nqEI9KbEs+/pTtO7+ICnjZVv1qke7+Oo0oQWaIddw06jjCmFyugIfUda6fWYcVOZI\nzizqOmdUFNAR+tlDuHhBcg/tlgfBHpjd09iECQMHAJeRRngH6dJcrFvDiQwHN5Fo\n/lMykd6FEy21DNYyh9Rbhv2r3y1GWzxbCXQSRAdh67boZbS9D2mSNqfETWcDkqiL\nDERRKud5cSJQw/b57v/PLx8eIFR9TpgLNN98eynyMQKBgQDtROc+Ib19xuEnaDFz\nDib3iQBJjsXk2HsMIuF2NkL7LomECuVp+NZimpKLzMFEY/5nypPiK61l2EkdLOLp\niRoVW+w1MoFKmFWuxPljD4VOANGkFoHGz/Tr2/GJLNeylM8Re6nbwq7510ReIYuT\nZ9DRAVoNUM1HdHye+q0M16FkvwKBgQC4UiX+wFhrvUSwBZs3K5Kl2uQQixrZVF/s\nu2A9REt6E/p6eYLlOIQBlTBIdtLSg1fn1q0d++nMgwxNS99Iny960Mx54SmVFDsN\npjBLZpK2y18o31a1wDjIEKsPkaLy5qNDZ6boYASMikvytnLgCCT6lW7M5qHzCTj9\n3E25sJKHGQKBgA3dtv3kjuRo2QOqjSlCLHjO4ttpopsLI7XD3BVCeoufXp3+3QVi\na3T7v5C3+Jt8lIOQTTAsiUeoai1wUBqBzqps4tMBDplDac566HAnmgzC8315a0Ap\nKxEVm3n+yuQ+2hMVfQnAyOUE9ZPitft5V7S/NXoNvNFuN1I7KB3WBDKVAoGALRYz\nIxiryFb42VHVwO4Qpi9gAEf2nljMSh0fkn0FNWxzpcfZY/aqG7UBpYgjU8k7FIPn\nvuDjNNqNhM7dZGdD9vfiPKH+SPA07cbMI3WIx9wBf/75t+W4PgANx/Yo9N/D6fYN\n1uO92R7vKwTEHtb/LKim/MohrVCBN1/PR2/Qt+kCgYBdmmnBixgmu1K+R9blpx+i\nDLJE6O7MJi6uwIGnDBf5cQn4qCgJwvUjq71HdO4WYzBM95dCbxyv1QaD00r4OIwr\nMEv0BLEnU8uLS9X2vlAStEikjxrVuJynWr8rolykVUsicCpKx64VcoKlpiQmPG83\nTBb18OaykSg6DHnNjos5Zg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "ethan-387@teddy-bear-215804.iam.gserviceaccount.com",
+  "client_id": "103186175367867499857",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ethan-387%40teddy-bear-215804.iam.gserviceaccount.com"
+}
