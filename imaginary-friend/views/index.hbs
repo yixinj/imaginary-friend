@@ -6,29 +6,76 @@
         type="text/css" />
 </head>
 
+{{!-- TODO: spooky mode --}}
+
 <body>
+    {{!-- BUBBLES --}}
+    <div id="background-wrap">
+        <div class="bubble x1"></div>
+        <div class="bubble x2"></div>
+        <div class="bubble x3"></div>
+        <div class="bubble x4"></div>
+        <div class="bubble x5"></div>
+        <div class="bubble x6"></div>
+        <div class="bubble x7"></div>
+        <div class="bubble x8"></div>
+        <div class="bubble x9"></div>
+        <div class="bubble x10"></div>
+    </div>
 
     <div class="container">
         <div class="row">
-            <div class="col-sm">
+            <div class="col-sm toy-container">
+                <img id="bubble" width="200" src="/images/speech.png" alt="bubble">
                 <img id="toy" src="/images/narwhal.png" alt="Toy Placeholder">
             </div>
         </div>
-        <div class="row">
+    </div>
+
+    {{!-- about section --}}
+    <div class='container about-div'>
+        <div class='row'>
             <div class="col-sm">
-                <button type="button" class="btn btn-primary" onclick="startRecording()">Record</button>
-                <button type="button" class="btn btn-primary" onclick="stopRecording()">Stop</button>
-                <button type="button" class="btn btn-primary" onclick="download()">Download</button>
+                <h1 class='title'>What is Imaginary Friend?</h1>
+                <br>
+                <h2 class='body-text'>&emsp; Imaginary Friend is a digital
+                    friend
+                    your child can speak
+                    with. The app continuously takes in audio and runs
+                    sentiment
+                    analysis on your child's speech
+                    patterns,
+                    looking for common words and phrases associated with distress or
+                    mental
+                    disorders in children.
+                    If the app determines that your child's speech is
+                    concerning,
+                    it sends you a text
+                    with what was said and what disorders or problems it may be
+                    linked with. <br><br>&emsp; Imaginary
+                    Friend is meant to be used as a lightweight, early
+                    diagnostic
+                    tool for potential mental disorders. It's based on the premise that 
+                    early detection and treatment improve outcomes, and that 
+                    certain speech patterns can be predictive of certain conditions.
+                    Speech patterns used in analysis are pulled from data sets from mentally ill
+                    children.
+                    Disorders in the datasets include ...
+                    <br><br>
+                    Use it by pressing 'Record' and allowing your child to speak with the Narwhal.
+
+                </h2>
+                <br><br><br><br><br>
+                <p align='center'>Made with <span style="color: #e25555;">&#9829;</span> for MedHacks</p>
             </div>
-        </div>
-        <div class="row">
+
         </div>
     </div>
 
-    <p id = "test">Test</p>
-    <script>document.write(5+6)</script>
+    {{!-- <p id="test">Test</p>
+    <script>document.write(5 + 6)</script> --}}
 
-    <form class="form-signin">
+    {{!-- <form class="form-signin">
         <img class="mb-4" src="../../assets/brand/bootstrap-solid.svg" alt=""
             width="72" height="72">
         <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
@@ -45,7 +92,7 @@
         </div>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
         <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
-    </form>
+    </form> --}}
 
     {{!-- https://julienrenaux.fr/2014/09/23/d3-js-responsive-word-cloud/
     --}}

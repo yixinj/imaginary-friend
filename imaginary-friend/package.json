@@ -20,6 +20,7 @@
     "node-record-lpcm16": "^0.3.1",
     "nodemon": "^1.18.4",
     "request": "^2.88.0",
-    "request-promise": "^4.2.2"
+    "request-promise": "^4.2.2",
+    "unirest": "^0.5.1"
   }
 }

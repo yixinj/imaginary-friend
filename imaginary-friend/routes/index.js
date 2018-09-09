@@ -7,26 +7,9 @@ router.get('/pages/about', function(req, res, next) {
   res.render('pages/about');
 });
 
-
-// api request for voice to text
-// function getVoiceToText(input) {
-//   return rp({
-//     method: 'POST',
-//     uri: '',
-//     body: {
-
-//     },
-//     headers: {
-//         'Content-Type': 'application/json',
-//         // 'Ocp-Apim-Subscription-Key': process.env.APIkey
-//     },
-//     json: true
-//   }).then((data) => {
-
-//   }).catch(function(err) {
-//     console.log(`Something went wrong ${err}`);
-//   })
-// }
+router.get('/users/login', function(req, res, next) {
+  res.render('users/login');
+})
 
 /* GET home page. */
 router.get('/', function(req, res, next) {

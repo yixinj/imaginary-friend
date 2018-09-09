@@ -15,6 +15,7 @@ from six.moves import queue
 trigger = 0
 trigger2 = 0
 trigger3 = 0
+test = ""
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="C:\\Users\\yixin\\workspace\\Web Design\\MedHacks2018\\imaginary-friend\\pk.json"
 
@@ -121,7 +122,7 @@ def listen_print_loop(responses):
                 #trigger +=1
 
         # Display the transcription of the top alternative.
-        transcript = result.alternatives[0].transcript
+        #transcript = result.alternatives[0].transcript
 
         
         # Display interim results, but with a carriage return at the end of the
@@ -143,9 +144,12 @@ def listen_print_loop(responses):
 
         else:
             print(transcript + overwrite_chars)
+            
 
             words = transcript.split()
             for word in words:
+                global test
+                test = test+ words+ ' '
                 if word == 'hello':
                     global trigger
                     trigger+=1
@@ -194,6 +198,9 @@ def main():
     print(trigger)
     print(trigger2)
     print(trigger3)
+    #sys.stdout.write(test)
+    print(test)
+    #sys.stdout.flush()
 
 
 
