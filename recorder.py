@@ -150,7 +150,11 @@ def listen_print_loop(responses):
                 json.dump(all_words, outfile)
 
             # Graph and save graph as png
-            makeWordCloud('hey');
+            text = ""
+            for key, value in all_words.items():
+                for i in range(value):
+                    text += key + " "
+            makeWordCloud(text);
 
             # Exit recognition if any of the transcribed phrases could be
             # one of our keywords.
