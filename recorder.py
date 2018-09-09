@@ -15,7 +15,10 @@ from six.moves import queue
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="C:\\Users\\yixin\\workspace\\Web Design\\MedHacks2018\\imaginary-friend\\pk.json"
+print("Starting up python recorder")
+sys.stdout.flush()
+
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "C:\\Users\\yixin\\workspace\\Web Design\\MedHacks2018\\imaginary-friend\\pk.json"
 
 # Audio recording parameters
 RATE = 16000
@@ -27,6 +30,7 @@ all_words = {}
 
 class MicrophoneStream(object):
     """Opens a recording stream as a generator yielding the audio chunks."""
+
     def __init__(self, rate, chunk):
         self._rate = rate
         self._chunk = chunk
@@ -144,7 +148,7 @@ def listen_print_loop(responses):
                     all_words[word] += 1
                 else:
                     all_words[word] = 1
-            
+
             # Update the JSON
             with open('data.json', 'w') as outfile:
                 json.dump(all_words, outfile)
@@ -154,7 +158,7 @@ def listen_print_loop(responses):
             for key, value in all_words.items():
                 for i in range(value):
                     text += key + " "
-            makeWordCloud(text);
+            makeWordCloud(text)
 
             # Exit recognition if any of the transcribed phrases could be
             # one of our keywords.
@@ -164,17 +168,17 @@ def listen_print_loop(responses):
 
             num_chars_printed = 0
 
+
 def makeWordCloud(text):
     # Create the wordcloud object
     wordcloud = WordCloud(width=480, height=480, margin=0).generate(text)
-    
+
     # Display the generated image:
     plt.imshow(wordcloud, interpolation='bilinear')
     plt.axis("off")
     plt.margins(x=0, y=0)
     # plt.show()
     plt.savefig('cloud.png')
-
 
 
 def main():

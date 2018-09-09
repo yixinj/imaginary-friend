@@ -4,7 +4,7 @@ var rp = require('request-promise');
 
 /* GET about. */
 router.get('/', function(req, res, next) {
-  res.render('pages/about', { title: 'Imaginary Friend | About' });
+  res.render('analytics', { title: 'Imaginary Friend | Analytics' });
 });
 
 

@@ -6,7 +6,9 @@
         type="text/css" />
 </head>
 
-{{!-- TODO: spooky mode --}}
+{{!-- TODO: update wordcloud every 1s --}}
+{{!-- TODO: make wordcloud look pretty--}}
+{{!-- TODO: sentiment analysis --}}
 
 <body>
     {{!-- BUBBLES --}}
@@ -36,41 +38,95 @@
     <div class='container about-div'>
         <div class='row'>
             <div class="col-sm">
-                <h1 class='title'>What is Imaginary Friend?</h1>
+                <h1 class='title'>Who's Lula?</h1>
                 <br>
-                <h2 class='body-text'>&emsp; Imaginary Friend is a digital
+                <h2 class='body-text'>&emsp; Lula the Narwhal is a digital
                     friend
                     your child can speak
                     with. The app continuously takes in audio and runs
                     sentiment
                     analysis on your child's speech
                     patterns,
-                    looking for common words and phrases associated with distress or
+                    looking for common words and phrases associated with
+                    distress or
                     mental
                     disorders in children.
                     If the app determines that your child's speech is
                     concerning,
                     it sends you a text
                     with what was said and what disorders or problems it may be
-                    linked with. <br><br>&emsp; Imaginary
-                    Friend is meant to be used as a lightweight, early
+                    linked with. <br><br>&emsp; Lula the Narwhal
+                    is meant to be used as a lightweight, early
                     diagnostic
-                    tool for potential mental disorders. It's based on the premise that 
-                    early detection and treatment improve outcomes, and that 
-                    certain speech patterns can be predictive of certain conditions.
-                    Speech patterns used in analysis are pulled from data sets from mentally ill
+                    tool for potential mental disorders. It's based on the
+                    premise that
+                    early detection and treatment improve outcomes, and that
+                    certain speech patterns can be predictive of certain
+                    conditions.
+                    Speech patterns used in analysis are pulled from data sets
+                    from mentally ill
                     children.
                     Disorders in the datasets include ...
                     <br><br>
-                    Use it by pressing 'Record' and allowing your child to speak with the Narwhal.
+                    Use it by pressing 'Record' and allowing your child to
+                    speak with Lula the Narwhal.
 
                 </h2>
-                <br><br><br><br><br>
-                <p align='center'>Made with <span style="color: #e25555;">&#9829;</span> for MedHacks</p>
             </div>
 
         </div>
     </div>
+
+    <body>
+
+
+        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+        <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+        <script>
+            window.onload = function () {
+
+                var dataPoints = [];
+
+                var chart = new CanvasJS.Chart("chartContainer", {
+                    animationEnabled: true,
+                    theme: "light2",
+                    title: {
+                        text: "Trigger Words"
+                    },
+                    axisY: {
+                        title: "Units",
+                        titleFontSize: 24
+                    },
+                    data: [{
+                        type: "column",
+                        yValueFormatString: "#,### Units",
+                        dataPoints: dataPoints
+                    }]
+                });
+
+                function addData(data) {
+                    for (var i = 0; i < data.length; i++) {
+                        dataPoints.push({
+                            //x: new Date(data[i].date),
+                            y: data[i].units
+                        });
+                    }
+                    chart.render();
+
+                }
+
+                $.getJSON("https://canvasjs.com/data/gallery/javascript/daily-sales-data.json", addData);
+
+            }
+        </script>
+    </body>
+
+
+
+
+
 
     {{!-- <p id="test">Test</p>
     <script>document.write(5 + 6)</script> --}}
